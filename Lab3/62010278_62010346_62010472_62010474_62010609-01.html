@@ -11,9 +11,228 @@
       crossorigin="anonymous"
     />
     <script async src="/cdn-cgi/bm/cv/669835187/api.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script>
+      $(document).ready(function () {
+        $("#button2").click(function () {
+          $("#button2").fadeOut();
+          $("#button3").fadeIn();
+          $("#f2").fadeIn();
+        });
+        $("#button3").click(function () {
+          $("#button2").fadeIn();
+          $("#button3").fadeOut();
+          $("#f2").fadeOut();
+        });
+        $("#name").mouseenter(function () {
+          $("#img-sova1").fadeIn();
+          $("#name1").fadeIn();
+        });
+        $("#bottom-right").mouseleave(function () {
+          $("#img-sova1").fadeOut();
+          $("#name1").fadeOut();
+        });
+
+        $("#name1").click(function () {
+          $("#img-sova1").fadeOut();
+          $("#name1").fadeOut();
+        });
+      });
+    </script>
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
+      });
+    </script>
   </head>
   <body>
     <style>
+      .containera {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .center {
+        position: absolute;
+        height: 15%;
+        display: flex;
+      }
+      .text-centerr {
+        font-size: 50px;
+        background-color: brown;
+        color: aliceblue;
+        padding-top: 1.5%;
+      }
+      [id="bottom-right"] {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+      .img-sova {
+        width: 100%;
+        height: 440px;
+        display: none;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .bottom {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+      }
+      [id="name"] {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      [id="name1"] {
+        position: relative;
+        display: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .modal-title {
+        color: black;
+      }
+      .modal-body {
+        color: black;
+      }
+      .close {
+        position: fixed;
+        right: 5px;
+      }
+
+      .pic-sova {
+        width: 400px;
+      }
+      .bottom-left {
+        position: absolute;
+        bottom: -100px;
+        width: 60%;
+        height: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        background-color: rgb(255, 9, 243, 0.5);
+      }
+      .inside {
+        background-color: rgba(151, 34, 145, 0.5);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      [id="i2"] {
+        font-size: 80px;
+        text-align: left;
+      }
+      [id="i3"] {
+        font-size: 40px;
+        text-align: left;
+      }
+      [id="i4"] {
+        font-size: 40px;
+        text-align: left;
+      }
+      [id="i5"] {
+        text-align: right;
+        width: 50%;
+      }
+      .initsova {
+        width: 50px;
+        height: 50px;
+      }
+      .btn:hover {
+        opacity: 50%;
+      }
+      .viedo1 {
+        width: 600px;
+        height: 600px;
+        padding-bottom: 200px;
+        padding-left: 50px;
+      }
+      .viedo2 {
+        width: 800px;
+        height: 800px;
+        padding-bottom: 200px;
+      }
+
+      [id="model12"] {
+        width: 850px;
+        height: 1000px;
+      }
+      [id="o0"] {
+        background-color: darkgreen;
+      }
+      [id="inside2"] {
+        background-color: darkolivegreen;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 98%;
+        height: 98%;
+        margin: auto;
+      }
+      .period {
+        width: 30%;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 5px;
+      }
+      [id="c1"] {
+        width: 30%;
+        text-align: center;
+      }
+      [id="y1"] {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      [id="f1"] {
+        background-color: darkslategray;
+        width: 10%;
+        text-align: center;
+        margin-left: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: azure;
+        font-size: 40px;
+      }
+      [id="f2"] {
+        width: 80%;
+        text-align: left;
+        margin-left: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        color: azure;
+        font-size: 20px;
+        display: none;
+      }
+      #f2 {
+        transition-timing-function: ease;
+      }
+      [id="f2"]:hover {
+        width: 99%;
+        transition: width 2s;
+      }
+      [id="button2"] {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      [id="button3"] {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
       .boxes {
         border-radius: 20px;
         -webkit-box-shadow: 0 0 10px #fff;
@@ -72,7 +291,7 @@
               <div class="nav-link">/</div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#62010346">62010346</a>
+              <a class="nav-link" href="#b1">62010346</a>
             </li>
             <li class="nav-item">
               <div class="nav-link">/</div>
@@ -170,7 +389,331 @@
     </div>
 
     <!-- 62010346 -->
+    <div class="d-flex w-100 h-100 flex-column" id="b1">
+      <img
+        src="https://media.discordapp.net/attachments/933744980990758922/939543384601813022/valorant-logo-red-4k-tt.jpg?width=839&height=472"
+        class="img-rounded"
+        alt="Cinque Terre"
+      />
+      <div class="center w-100" id="center1">
+        <div class="text-centerr w-100" id="center2">62010346 Tanatat</div>
+      </div>
+      <div class="d-flex w-100 h-100">
+        <div class="bottomr1" id="bottom-right">
+          <div class="bottom">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="name"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              sova-alert
+            </button>
+            <button class="btn btn-primary" id="name1">cancel</button>
+          </div>
+          <img
+            src="https://cdn.discordapp.com/attachments/933744980990758922/939555312610979865/262264036_1272098249939151_21814162279995112_n.jpg"
+            class="img-sova"
+            id="img-sova1"
+            alt="contteer"
+          />
+        </div>
+        <div class="bottom-left">
+          <div class="inside">
+            <div class="d-flex flex-column">
+              <div class="p-2" id="i2">Sova</div>
+              <div class="p-2" id="i3">
+                position: INITIATOR
+                <img
+                  src="https://media.discordapp.net/attachments/933744980990758922/939588316830007336/Initiator.png"
+                  class="initsova"
+                />
+              </div>
+              <div class="p-2" id="i4">Ability</div>
+              <div
+                class="btn-toolbar"
+                role="toolbar"
+                aria-label="Toolbar with button groups"
+              >
+                <div
+                  class="btn-group mr-2"
+                  role="group"
+                  aria-label="First group"
+                >
+                  <button type="button" class="btn">
+                    <img
+                      src="https://media.discordapp.net/attachments/933744980990758922/939594245243817994/unknown.png"
+                      alt=""
+                      data-toggle="modal"
+                      data-target="#myModal1"
+                    />
+                  </button>
+                  <button type="button" class="btn">
+                    <img
+                      src="https://media.discordapp.net/attachments/933744980990758922/939596932815417444/unknown.png"
+                      alt=""
+                      data-toggle="modal"
+                      data-target="#myModal2"
+                    />
+                  </button>
+                  <button type="button" class="btn">
+                    <img
+                      src="https://media.discordapp.net/attachments/933744980990758922/939597067129593916/unknown.png"
+                      alt=""
+                      data-toggle="modal"
+                      data-target="#myModal3"
+                    />
+                  </button>
+                  <button type="button" class="btn">
+                    <img
+                      src="https://media.discordapp.net/attachments/933744980990758922/939597115775156264/unknown.png"
+                      alt=""
+                      data-toggle="modal"
+                      data-target="#myModal4"
+                    />
+                  </button>
+                </div>
+              </div>
 
+              <div class="p-2" id="i5">
+                <!-- The HTML5 video element that will create the background video on the header -->
+                <div class="embed-responsive embed-responsive-16by9" id="y1">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/KoZ4j5_R-Zw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex bd-highlight w-100 h-100" id="o0">
+        <div class="period bg-dark text-white">
+          <img
+            src="https://c.tenor.com/Kaz4G2mqIpsAAAAC/sova-valorant-dd-noob.gif"
+            alt=""
+            width="100%"
+          />
+          <div class="container" id="c1">Sova</div>
+        </div>
+
+        <div class="p-2 w-100 bd-highlight" id="o1">
+          <div class="d-flex flex-column" id="inside2">
+            <div class="p-2" id="f1">ชีวประวัติ</div>
+
+            <div class="p-xxl-2" id="f2">
+              Sova เกิดในฤดูหนาวอันยาวนานของทุ่งทุนดราของรัสเซีย <br />เขาติดตาม
+              ตามล่า
+              และกำจัดศัตรูได้อย่างมีประสิทธิภาพและแม่นยำด้วยธนูพิเศษที่เขาดัดแปลงขึ้นมาเอง<br />และความสามารถในการล่าชั้นเลิศ
+              ต่อให้คุณวิ่งหนีไปสุดขอบฟ้า ก็จะไม่มีวันรอดพ้นจากเงื้อมมือของเขา
+            </div>
+            <div class="d-flex">
+              <div class="p-2">
+                <button class="btn-primary" id="button2">click to read</button>
+              </div>
+              <div class="p-2">
+                <button class="btn-primary" id="button3">cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 flex-shrink-1 bd-highlight" id="o2"></div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Sova</h4>
+              <audio controls>
+                <source
+                  src="https://od.lk/d/MzRfMTA3NDc2MzJf/ad5ac2ce-0f3e-465a-86c9-22ba006adc8a.mp3"
+                />
+              </audio>
+
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <img
+                  src="https://media.discordapp.net/attachments/933744980990758922/939580673763708998/maxresdefault.jpg?width=839&height=472"
+                  class="pic-sova"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal1 -->
+      <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content" id="model12">
+            <div class="modal-header">
+              <h4 class="modal-title">Q - SHOCK BOLT</h4>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <video
+                  class="viedo2"
+                  playsinline="playsinline"
+                  autoplay="autoplay"
+                  muted="muted"
+                  loop="loop"
+                >
+                  <source
+                    src="https://fastcdn.mobalytics.gg/assets/valorant/videos/agents-skills/sova_q.webm"
+                    type="video/webm"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal2 -->
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content" id="model12">
+            <div class="modal-header">
+              <h4 class="modal-title">E - RECON BOLT</h4>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <video
+                  class="viedo2"
+                  playsinline="playsinline"
+                  autoplay="autoplay"
+                  muted="muted"
+                  loop="loop"
+                >
+                  <source
+                    src="https://fastcdn.mobalytics.gg/assets/valorant/videos/agents-skills/sova_e.webm"
+                    type="video/webm"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal3 -->
+      <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content" id="model12">
+            <div class="modal-header">
+              <h4 class="modal-title">C - OWL DRONE</h4>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <video
+                  class="viedo2"
+                  playsinline="playsinline"
+                  autoplay="autoplay"
+                  muted="muted"
+                  loop="loop"
+                >
+                  <source
+                    src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt07d2025ac5dcd792/5ecad883f5bd13348a6cac89/Sova_C_v001_web.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal4 -->
+      <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content" id="model12">
+            <div class="modal-header">
+              <h4 class="modal-title">X - HUNTER’S FURY</h4>
+            </div>
+
+            <div class="modal-body">
+              <div>
+                <video
+                  class="viedo2"
+                  playsinline="playsinline"
+                  autoplay="autoplay"
+                  muted="muted"
+                  loop="loop"
+                >
+                  <source
+                    src="https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltf9fc34106a23479c/5ecad88397b46c1911ad1872/Sova_X_v001_web.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- 62010472 -->
     <div class="container-fluid" style="border: 2px red dotted" id="62010472">
